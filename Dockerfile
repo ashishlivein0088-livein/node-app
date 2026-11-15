@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 3000
 
 # Change "index.js" to your entry file (or use: CMD ["npm", "start"])
-CMD ["node", "app.js"]
+CMD ["node", "server.js"]
