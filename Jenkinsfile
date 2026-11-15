@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID = '666861118494'
         AWS_REGION = 'us-east-1'
-        ECR_REPO_NAME = 'your-node-app-repo'
+        ECR_REPO_NAME = 'my-node-app'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 
