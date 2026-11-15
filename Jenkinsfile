@@ -41,7 +41,7 @@ pipeline {
                   propagate: true,
                   parameters: [
                     string(name: 'IMAGE_TAG', value: "${IMAGE_TAG}"),
-                    string(name: 'ECR_REPO',  value: "${ECR_REPO}")
+                    string(name: 'ECR_REPO',  value: "${ECR_REPO_NAME}")
                   ]
             }
         }
