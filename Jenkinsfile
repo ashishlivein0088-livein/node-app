@@ -9,12 +9,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/ashishlivein0088-livein/node-app.git'
-            }
-        }
-
         stage('Install Dependencies & Test') {
             steps {
                 sh 'npm install'
