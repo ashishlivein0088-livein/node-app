@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        AWS_ACCOUNT_ID = 'YOUR_AWS_ACCOUNT_ID'
+        AWS_ACCOUNT_ID = '666861118494'
         AWS_REGION = 'us-east-1'
         ECR_REPO_NAME = 'your-node-app-repo'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-node-repo.git'
+                git branch: 'main', url: 'https://github.com/ashishlivein0088-livein/node-app.git'
             }
         }
 
